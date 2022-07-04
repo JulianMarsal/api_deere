@@ -1,0 +1,31 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-deereapi-dev-105504-authRole",
+      "UnauthRoleArn": "arn:aws:iam::302944701803:role/amplify-deereapi-dev-105504-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::302944701803:role/amplify-deereapi-dev-105504-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-deereapi-dev-105504-deployment",
+      "UnauthRoleName": "amplify-deereapi-dev-105504-unauthRole",
+      "StackName": "amplify-deereapi-dev-105504",
+      "StackId": "arn:aws:cloudformation:us-east-1:302944701803:stack/amplify-deereapi-dev-105504/c3654310-ecb2-11ec-aacf-0aeaf07a36a7",
+      "AmplifyAppId": "d1dz6pgn99us8k"
+    },
+    "categories": {
+      "function": {
+        "deereapi1960c813": {
+          "deploymentBucketName": "amplify-deereapi-dev-105504-deployment",
+          "s3Key": "amplify-builds/deereapi1960c813-55594432657667364d44-build.zip"
+        },
+        "deereapi91a08d99": {
+          "deploymentBucketName": "amplify-deereapi-dev-105504-deployment",
+          "s3Key": "amplify-builds/deereapi91a08d99-7457446c65483741464d-build.zip"
+        },
+        "deereapi0f96c12f": {
+          "deploymentBucketName": "amplify-deereapi-dev-105504-deployment",
+          "s3Key": "amplify-builds/deereapi0f96c12f-37694d3131323270634e-build.zip"
+        }
+      }
+    }
+  }
+}

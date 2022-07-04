@@ -1,14 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-
+// Mi redirect uri es mi const uri = window.location
+//const code_receiver_uri = window.location;
+// Ver de usar useEfect() con console log para ver la response de Deere
+//console.log(response.code)
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>Hello from V2</h1>
-      </header>
+
+
+
+      <button onClick={} >
+        Conect Deere
+      </button>
+
+
+
     </div>
   );
 }

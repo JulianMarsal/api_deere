@@ -1,0 +1,87 @@
+# This "input" configures a global authorization rule to enable public access to
+# all models in this schema. Learn more about authorization rules here: https://docs.amplify.aws/cli/graphql/authorization-rules
+input AMPLIFY { globalAuthRule: AuthRule = { allow: public } } # FOR TESTING ONLY!
+
+#Here begins the schema definition of Boundary
+type Boundary {
+  type: String
+  name: String!
+  sourceType: String
+  createdTime: String
+  modifiedTime: String
+  area: Area
+  workableArea: WorkableArea 
+  multipolygons: [Polygon] 
+  extent: Extent 
+  archived: Boolean
+  id: ID!
+  active: Boolean
+  irrigated: Boolean    
+}
+
+type Point {
+  #type: String
+  lat: Float!
+  lon: Float!
+}
+
+type Area {
+  type: String 
+  valueAsDouble: String
+  unit: String
+}
+
+type WorkableArea {
+  type: String
+  valueAsDouble: String
+  unit: String
+}
+
+type Extent {
+  type: String
+  topLeft: Point
+  bottomRight: Point
+}
+
+type Ring {
+  type: String
+  points: [Point]
+}
+
+type Polygon {
+  type: String
+  rings: [Ring]
+}
+#Here ends the schema definition of Boundary
+
+#Here begins the schema definition of Client
+type Client {
+  #total: Int
+  name: String
+  links: [Link]
+  id: ID
+  archived: Boolean
+}
+
+type Link {
+  #type: String
+  rel: String
+  uri: String
+}
+#Here ends the schema definition of Client
+
+#Here begins the schema definition of Client
+type Field {
+  type: String
+  name: String
+  archived: Boolean
+  id: ID
+  links: [Link]
+}
+#Here ends the schema definition of Client
+
+type Query {
+  getBoundary(organizationId: ID!, fieldId: String!): Boundary @function(name: "deereapi1960c813-${env}")
+  listFields(organizationId: ID): [Field] @function(name: "deereapi0f96c12f-${env}")
+  listClients(organizationId: ID!): [Client] @function(name: "deereapi91a08d99-${env}")
+}
