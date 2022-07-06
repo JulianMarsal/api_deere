@@ -33,7 +33,7 @@ export const getBoundary = /* GraphQL */ `
   }
 `;
 export const listFields = /* GraphQL */ `
-  query ListFields($organizationId: ID) {
+  query ListFields($organizationId: ID!) {
     listFields(organizationId: $organizationId) {
       type
       name
@@ -57,5 +57,10 @@ export const listClients = /* GraphQL */ `
       id
       archived
     }
+  }
+`;
+export const listMachines = /* GraphQL */ `
+  query ListMachines($organizationId: ID!) {
+    listMachines(organizationId: $organizationId)
   }
 `;

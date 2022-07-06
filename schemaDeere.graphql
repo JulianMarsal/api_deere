@@ -70,7 +70,6 @@ type Link {
 }
 #Here ends the schema definition of Client
 
-#Here begins the schema definition of Client
 type Field {
   type: String
   name: String
@@ -79,8 +78,6 @@ type Field {
   links: [Link]
 }
 #Here ends the schema definition of Client
-
-#Here begins the schema definition of Client
 
  type Machine {
    id: ID
@@ -91,13 +88,9 @@ type Field {
    externalID: String
  }
 
- 
-
- #Here ends the schema definition of Client
-
 type Query {
   getBoundary(organizationId: ID!, fieldId: String!): Boundary @function(name: "deereapi1960c813-${env}")
-  listFields(organizationId: ID!): [Field] @function(name: "deereapi0f96c12f-${env}")
-  listClients(organizationId: ID!): [Client] @function(name: "deereapi91a08d99-${env}")
+  listFields(organizationId: ID): [Field] @function(name: "deereapi0f96c12f-${env}")
   listMachines(organizationId: ID!): String @function(name: "listMachines-${env}")
+  listClients(organizationId: ID!): [Client] @function(name: "deereapi91a08d99-${env}")
 }

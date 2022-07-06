@@ -15,15 +15,19 @@
       "function": {
         "deereapi1960c813": {
           "deploymentBucketName": "amplify-deereapi-dev-105504-deployment",
-          "s3Key": "amplify-builds/deereapi1960c813-55594432657667364d44-build.zip"
+          "s3Key": "amplify-builds/deereapi1960c813-3372624e7431416c7143-build.zip"
         },
         "deereapi91a08d99": {
           "deploymentBucketName": "amplify-deereapi-dev-105504-deployment",
-          "s3Key": "amplify-builds/deereapi91a08d99-7457446c65483741464d-build.zip"
+          "s3Key": "amplify-builds/deereapi91a08d99-334f62644973376d3557-build.zip"
         },
         "deereapi0f96c12f": {
           "deploymentBucketName": "amplify-deereapi-dev-105504-deployment",
-          "s3Key": "amplify-builds/deereapi0f96c12f-37694d3131323270634e-build.zip"
+          "s3Key": "amplify-builds/deereapi0f96c12f-517a2f735a66755a5a35-build.zip"
+        },
+        "listMachines": {
+          "deploymentBucketName": "amplify-deereapi-dev-105504-deployment",
+          "s3Key": "amplify-builds/listMachines-4f6a4d7178593974387a-build.zip"
         }
       }
     }
